@@ -11,6 +11,7 @@ mod day_four;
 mod day_one;
 mod day_three;
 mod day_two;
+mod day_six;
 
 fn read_file_line_by_line<P>(input_path: P) -> Result<impl Iterator<Item = String>>
 where
