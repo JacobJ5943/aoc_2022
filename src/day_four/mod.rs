@@ -136,7 +136,8 @@ mod tests {
 2-8,3-7
 6-6,4-6
 2-6,4-8"
-            .split('\n').map(str::to_string);
+            .split('\n')
+            .map(str::to_string);
 
         let result = part_one_from_iter(input);
         match result {
@@ -156,7 +157,6 @@ mod tests {
         }
     }
 
-
     #[test]
     fn test_part_two_example() {
         let input = "2-4,6-8
@@ -165,7 +165,8 @@ mod tests {
 2-8,3-7
 6-6,4-6
 2-6,4-8"
-            .split('\n').map(str::to_string);
+            .split('\n')
+            .map(str::to_string);
 
         let result = part_two_from_iter(input);
         match result {
@@ -174,7 +175,7 @@ mod tests {
         }
     }
 
-#[test]
+    #[test]
     fn test_part_two_my_input() {
         let input = read_file_line_by_line("src/day_four/input.txt").unwrap();
 
