@@ -1,3 +1,4 @@
+#![allow(dead_code, unused)]
 use std::collections::HashSet;
 
 use color_eyre::{Report, Result};
@@ -66,7 +67,7 @@ where
         let line_trimmed = line.trim_start().trim_end();
 
         if line_trimmed.len() % 2 != 0 {
-            return Err(Report::msg("It said the have the same number of items in each part so I think this has be even.  At leats if I am saying that the priority doesn't matter with this calculation"));
+            return Err(Report::msg("It said the have the same number of items in each part so I think this has be even.  At least if I am saying that the priority doesn't matter with this calculation"));
         }
         let left = &line_trimmed[..line_trimmed.len() / 2];
         let right = &line_trimmed[line_trimmed.len() / 2..];

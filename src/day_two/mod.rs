@@ -1,3 +1,4 @@
+#![allow(dead_code, unused)]
 use std::path::Path;
 
 use crate::read_file_line_by_line;

@@ -1,4 +1,5 @@
-use std::collections::{VecDeque, HashSet};
+#![allow(dead_code)]
+use std::collections::{HashSet, VecDeque};
 
 use color_eyre::{Report, Result};
 
@@ -37,8 +38,7 @@ fn part_two(input_line: String) -> Result<usize> {
         for c_har in checking_chars.iter() {
             hash_set.insert(*c_har);
         }
-        if hash_set.len() == 14
-        {
+        if hash_set.len() == 14 {
             return Ok(marker_index);
         }
         checking_chars.pop_front().unwrap();
@@ -52,11 +52,6 @@ mod tests {
     use crate::read_file_line_by_line;
 
     use super::*;
-
-    #[test]
-    fn it_works() {
-        todo!()
-    }
 
     #[test]
     fn test_part_one_example() {
@@ -93,8 +88,6 @@ mod tests {
             1920
         );
     }
-
-
 
     #[test]
     fn test_part_two_example() {
@@ -133,6 +126,4 @@ mod tests {
             2334
         );
     }
-
-    
 }

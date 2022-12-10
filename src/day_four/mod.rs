@@ -1,3 +1,4 @@
+#![allow(dead_code, unused)]
 use color_eyre::{Report, Result};
 
 struct Elf {

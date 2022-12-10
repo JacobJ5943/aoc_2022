@@ -1,9 +1,9 @@
+#![allow(dead_code, unused)]
+
 use color_eyre::Result;
 use std::path::Path;
 
 use crate::read_file_line_by_line;
-
-#[allow(dead_code)]
 
 fn part_one_from_path<P>(input_path: P) -> Result<usize>
 where
