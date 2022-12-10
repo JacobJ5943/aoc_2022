@@ -6,6 +6,7 @@ pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
 
+mod day_eight;
 mod day_five;
 mod day_four;
 mod day_one;
